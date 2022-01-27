@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             function submitClick(){
+                 var java=document.getElementById("optJava");
+                 var dot=document.getElementById("optDot");
+                 var python=document.getElementById("optPython");
+                 var msg=document.getElementById("msg");
+
+                 var courses="";
+                 if(java.checked)
+                 {
+                     courses +=java.value+"<br>";
+                 }
+                 if(dot.checked)
+                 {
+                     courses +=dot.value+"<br>";
+                 }
+                 if(python.checked)
+                 {
+                     courses +=python.value+"<br>";
+                 }
+                 msg.innerHTML="selected courses " + "<br>"+courses;
+             }
+        </script>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Select Courses</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="optJava" value="java">java
+                    </li>
+                    <li>
+                        <input type="checkbox" id="optDot" value=".Net">.Net
+                    </li>
+                    <li>
+                        <input type="checkbox" id="optPython" value="Python">Python
+                    </li>
+                </ul>
+                <br>
+                <input type="button" value="submit" onclick="submitClick()">
+            </fieldset>
+        </div>
+            <br>
+            <div align="center" id="msg"></div>
+    </body>
+</html>
