@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function submitclick(){
+                var userDetails =[userName="john", code=56889];
+                var txtName=document.getElementById("txtName").value;
+                var txtCode=document.getElementById("txtcode").value;
+                var msg=document.getElementById("msg");
+
+                if(userDetails.userName == txtName)
+                {
+                    if(userDetails.txtCode)
+                    {
+                        msg.innerHTML="pin verified";
+                    }
+                    else{
+                        msg.innerHTML="invalid code";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Payment</legend>
+                <dl>
+                    <dt>Name on Card</dt>
+                    <dd>
+                        <input type= "name" id="txtName">
+                    </dd>
+                    <dt>code</dt>
+                    <dd>
+                        <input type="text" id="txtcode" placeholder="you can use your OTP">
+                    </dd>
+                </dl>
+            </fieldset>
+            <input type="button" value="submit" onclick="submitclick()">
+            <br>
+            <div align="center" id="msg"></div>
+        </div>
+    </body>
+</html>
