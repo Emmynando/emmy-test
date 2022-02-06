@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  Facebook
+  <script>
+    function submitClick(){
+    var userDetails=[Username="Emeka", Password=12345];
+    var txtName=document.getElementById("txtName").value;
+    var txtPwd=document.getElementById("txtPwd").value;
+    var msg=document.getElementById("msg");
+    
+    if(userDetails.userName===txtName){
+      if(userDetails.Password===txtPwd){
+        msg.innerHTML="log in successful";
+      }
+      else{
+        msg.innerHTML="Werey you don go put incorrect details";
+      }
+    }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <fieldset align="center" border="2">
+      <legend>Login</legend>
+      <dl>
+        <dt>Username</dt>
+        <dd><input type="text" placeholder="username" id="txtName"></dd>
+        <dt> Password</dt>
+        <dd><input type="password" placeholder="password" id="txtPwd"></dd>
+        </dl>
+        </fieldset>
+        <input type="button" value="submit" onclick="submitClick()">
+        <br>
+      <div align= "center" id="msg"></div>
+    </div>
+</body>
+</html>
