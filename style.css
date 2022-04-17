@@ -13,6 +13,10 @@ body{
 .bottom-cloud{
     position: absolute;
 }
+.hob{
+    width: 25%;
+    margin: auto;
+}
 .contact{
     height: 1.5rem;
     width: 1.5rem;
