@@ -1,7 +1,7 @@
 'use strict';
 
 const mssg = document.querySelector('.msg');
-const contact = document.querySelectorAll('.contact');
+const contact = document.querySelector('.contact');
 
 
 
